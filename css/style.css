@@ -1,0 +1,55 @@
+section#gallery{
+	display:grid;
+	grid-template-column:(6,1fr);
+	justify-content: center;
+	margin:70px;
+}
+
+h1{ 
+	grid-column-start:3;
+	grid-column-end:4;
+	font-size: 20px;
+	font-family:sans-serif;
+}
+
+#name{
+	grid-column-start:2;
+	grid-column-end:5;
+	font-size: 50px;
+}
+
+span{
+	fontfamily: "Playfair Display";
+}
+
+p{
+	grid-column-start:1;
+	grid-column-end:6;
+	text-align: center
+}
+
+.button{
+	background: orange;
+	padding: 10px 90px;
+}
+
+#LetsChat{
+	grid-column-start:2;
+	grid-column-end:5;
+}
+
+@media screen and (max-width:400px)px{
+	section#gallery{
+		display:grid;
+		grid-template-column:(12,1fr);
+		grid-template-row: (7,1fr)
+		justify-content: center;
+		margin:90px;
+	}
+}
+ 
+#pic{
+	grid-template-column: 3;
+	grid-template-row:4;
+	
+}
